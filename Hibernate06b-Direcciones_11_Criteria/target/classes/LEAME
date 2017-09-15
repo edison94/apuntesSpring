@@ -1,0 +1,20 @@
+Mismo ejercicio que el Hibernate 6a pero usando Criteria
+
+Si quieres mas informacion de las diferencias entre Criteria/HQL, etc.
+http://matoosfe.com/blog/?p=73
+
+Earlier we saw how to use Hibernate Query Language to execute SQL like queries.
+
+Most of the times, we prefer HQL for querying the database and getting the results. HQL is not preferred way for updating or deleting values because then we need to take care of any associations between tables.
+
+Hibernate provides Criteria API that is more object oriented for querying the database and getting results. We can’t use Criteria to run update or delete queries or any DDL statements. It’s only used to fetch the results from the database using more object oriented approach.
+
+Some of the common usage of Criteria API are:
+
+- Criteria API provides Projection that we can use for aggregate functions such as sum(), min(), max() etc.
+- Criteria API can be used with ProjectionList to fetch selected columns only.
+- Criteria API can be used for join queries by joining multiple tables, useful methods are createAlias(), setFetchMode() and setProjection()
+- Criteria API can be used for fetching results with conditions, useful methods are add() where we can add Restrictions.
+- Criteria API provides addOrder() method that we can use for ordering the results.
+
+http://www.journaldev.com/2963/hibernate-criteria-example-tutorial

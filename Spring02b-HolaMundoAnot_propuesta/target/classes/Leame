@@ -1,0 +1,18 @@
+Es el mismo ejercicio con unos cambios
+
+Queremos tener un bean que de información de las calorias de una comida
+Quiero usar anotaciones en un fichero externo
+
+EJ.- 
+
+   case "lentejas":
+                calorias = 500;
+                break;
+            case "judias":
+                calorias = 600;
+                break; 
+            case "garbanzos":
+                calorias = 800;
+                break; 
+            case "manteca_cacahuete_con_mantequilla":
+                calorias = 3500;

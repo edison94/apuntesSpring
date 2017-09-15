@@ -1,0 +1,91 @@
+.card {
+	overflow: hidden;
+}
+
+.icono>i {
+	color: white;
+	font-size: 1.5em;
+}
+
+body {
+	background-color: #f7f7f7;
+}
+
+.container {
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+}
+
+.card>a {
+	color: black;
+	text-decoration: none;
+}
+
+footer {
+	color: white;
+	text-align: center;
+}
+
+footer>.container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.table>tbody>tr>td, .table>tfoot>tr>td {
+	vertical-align: middle;
+}
+
+.padre-icono-recomendado{
+	position: relative;
+}
+
+.icono-recomendado{
+	 position:absolute;
+	 top:0.3em;
+	 right:0.3em;
+}
+
+.card-header{
+	background-color: #7BDAFA;
+}
+
+@media screen and (max-width: 768px) {
+	table#cart tbody td .form-control {
+		width: 20%;
+		display: inline !important;
+	}
+	.actions .btn {
+		width: 36%;
+		margin: 1.5em 0;
+	}
+	.actions .btn-info {
+		float: left;
+	}
+	.actions .btn-danger {
+		float: right;
+	}
+	table#cart thead {
+		display: none;
+	}
+	table#cart tbody td {
+		display: block;
+		padding: .6rem;
+		min-width: 320px;
+	}
+	table#cart tbody td:before {
+		content: attr(data-th);
+		font-weight: bold;
+		display: inline-block;
+		width: 8rem;
+	}
+	table#cart tfoot td {
+		display: block;
+	}
+	table#cart tfoot td .btn {
+		display: block;
+	}
+	
+	.labelProd{
+		display: none;
+	}
+}

@@ -1,0 +1,22 @@
+Es un servicio web bajo JSON/XML
+
+se arranca añadiendo
+
+Spring13-RestControllerJson/provincia/28
+Spring13-RestControllerJson/provincia/28.xml
+
+Spring13-RestControllerJson/provincia/listado1
+SI queremos que lo haga con XML, tendrías que crear una clase LISTA e incluir anotaciones
+de forma parecida a lo hecho con la clase Provincia
+
+Para eso he creado
+Spring13-RestControllerJson/provincia/listado2
+
+https://www.genuitec.com/spring-frameworkrestcontroller-vs-controller/
+Usamos RestController
+Valido desde Spring 4.0
+
+
+Ejercicio planteado
+Hacer que los datos se vean tambien en un JSP
+Ideas: http://theblasfrompas.blogspot.com.es/2013/10/spring-mvc-rest-content-negotiation.html

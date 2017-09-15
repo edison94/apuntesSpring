@@ -1,0 +1,6 @@
+- Todos los campos son obligatorios
+
+- Si quieres hacer un validador especial (por ejemplo para un tipo de teléfonos)
+echa un vistazo a esta dirección
+
+http://www.journaldev.com/2668/spring-mvc-form-validation-example-using-annotation-and-custom-validator-implementation

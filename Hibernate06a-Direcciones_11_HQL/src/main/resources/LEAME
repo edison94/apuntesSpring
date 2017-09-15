@@ -1,0 +1,19 @@
+Mismo ejercicio que el Hibernate 4a
+Pero aprovecho el anterior para incluir sentencias HQL
+
+Si quieres mas informacion de las diferencias entre Criteria/HQL, etc.
+http://matoosfe.com/blog/?p=73
+
+Hibernate Framework comes with a powerful object-oriented query language – Hibernate Query Language (HQL). It’s very similar to SQL except that we use Objects instead of table names, that makes it more close to object oriented programming.
+
+HQL and Case Sensitivity: Hibernate query language is case-insensitive except for java class and variable names. So SeLeCT is the same as sELEct is the same as SELECT, but com.journaldev.model.Employee is not same as com.journaldev.model.EMPLOYEE.
+
+Some of the commonly supported clauses in HQL are:
+
+- From Clause: It’s same as select clause in SQL, from Employee is same as select * from Employee. We can also create alias such as from Employee emp or from Employee as emp.
+- Join Clause: HQL supports inner join, left outer join, right outer join and full join. For example, select e.name, a.city from Employee e INNER JOIN e.address a. In this query, Employee class should have a variable named address. We will look into it in the example code.
+- Aggregate Functions: HQL supports commonly used aggregate functions such as count(*), count(distinct x), min(), max(), avg() and sum().
+- Expressions: HQL supports arithmetic expressions (+, -, *, /), binary comparison operators (=, >=, <=, <>, !=, like), logical operations (and, or, not) etc.
+- HQL also supports order by and group by clauses.
+- HQL also supports sub-queries just like SQL queries.
+- HQL supports DDL, DML and executing store procedures too.

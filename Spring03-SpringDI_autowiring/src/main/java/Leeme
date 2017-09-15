@@ -1,0 +1,14 @@
+Este ejercicio habla de todos los modos de inyectar objetos e informaciones
+
+Las interfaces son
+
+	Driver3 < ---- License3   (@Autowired mediante constructor)
+	Driver2 < ---- License2   (@Autowired mediante setter)
+	Driver1 < ---- License1   (@Autowired mediante atributos)
+	
+	Driver4 < ---- License4   (@Resource con un nombre)	
+	Driver5 < ---- License5   (@Qualifier para elegir)
+	
+
+	
+@Component : se aplica a cualquier bean.

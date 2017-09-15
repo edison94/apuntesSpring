@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- este archivo hace la conexion y el datasource -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuración de conexión a la Base de Datos -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/crud</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1111</property>
+        <!-- JDBC connection pool -->
+        <!-- informacion sobre el pool de conexiones en Hibernate -->
+        <!-- http://rodrigomontemayor.wordpress.com/2009/10/05/como-configurar-c3p0-para-hibernate-y-encontrar-sesiones-no-cerradas/ -->
+        <!-- http://www.mkyong.com/hibernate/how-to-configure-the-c3p0-connection-pool-in-hibernate/ -->
+        <property name="connection.pool_size">1</property>
+        <!-- SQL dialecto -->
+        <!-- http://www.mkyong.com/hibernate/hibernate-dialect-collection/ -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Mostrar en consola todos las sentencias SQL ejecutadas -->
+        <!-- http://www.mkyong.com/hibernate/hibernate-display-generated-sql-to-console-show_sql-format_sql-and-use_sql_comments/-->
+        <!-- http://www.mkyong.com/hibernate/how-to-display-hibernate-sql-parameter-values-solution/ -->
+        <property name="show_sql">true</property>
+        <!-- Archivos Mapping -->
+        <mapping class="ejemplos.hibernate.model.Persona"/>
+    </session-factory>
+</hibernate-configuration>

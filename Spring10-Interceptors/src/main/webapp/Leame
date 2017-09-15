@@ -1,0 +1,14 @@
+HandlerInterceptor declares three methods based on where we want to intercept the HTTP request.
+
+boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler): 
+This method is used to intercept the request before it’s handed over to the handler method
+
+void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView): 
+This interceptor method is called when HandlerAdapter has invoked the handler but DispatcherServlet 
+is yet to render the view
+
+void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex): 
+This is a callback method that is called once the handler is executed and view is rendered.
+
+
+Arranca con /home

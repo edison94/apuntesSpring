@@ -1,0 +1,10 @@
+Mismo ejercicio que el Hiberante 4a
+Pero aprovecho el anterior para incluir Named Queries
+
+Si quieres mas informacion de las diferencias entre Criteria/HQL, etc.
+http://matoosfe.com/blog/?p=73
+
+Hibernate provides Named Query that we can define at a central location and use them anywhere in the code. We can created named queries for both HQL and Native SQL.
+
+Hibernate Named Queries can be defined in Hibernate mapping files or through the use of JPA annotations @NamedQuery and @NamedNativeQuery. Today we will look into both of them and how to use it.
+
